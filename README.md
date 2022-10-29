@@ -18,7 +18,7 @@ Device tree for the Samsung Galaxy SDM439
 Build without vendor so this need android 11 vendor
 
 Bugs
-Call sound
-Face unlock
-Bluetooth Audio
-Usb Debugging (mtp/Ptp working)
+|Call sound
+|Face unlock
+|Bluetooth Audio
+|Usb Debugging (mtp/Ptp working)
