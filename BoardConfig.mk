@@ -202,5 +202,10 @@ PMIC_QG_SUPPORT := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_KEYMASTER_VARIANT := samsung
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
+
 # inherit from the proprietary version
 #-include vendor/samsung/m01q/BoardConfigVendor.mk

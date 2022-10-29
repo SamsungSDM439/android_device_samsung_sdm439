@@ -95,3 +95,33 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fastbootd \
     init.recovery.qcom.rc
+
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.6 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
+    android.hardware.radio.deprecated@1.0 \
+    android.hardware.secure_element@1.0 \
+    librmnetctl \
+    libcnefeatureconfig \
+    libprotobuf-cpp-full \
+    libxml2 \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml
+
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    lib-imsvtshim \
+	tcmiface \
+    ims_ext_common.xml
