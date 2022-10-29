@@ -186,5 +186,17 @@ TARGET_USES_MKE2FS := true
 #power
 TARGET_USES_INTERACTION_BOOST := true
 
+#Enable peripheral manager
+TARGET_PER_MGR_ENABLED := true
+
+# Enable sensor multi HAL
+USE_SENSOR_MULTI_HAL := true
+
+# Enable sensor Version V_2
+USE_SENSOR_HAL_VER := 2.0
+
+# Enable QG user space
+PMIC_QG_SUPPORT := true
+
 # inherit from the proprietary version
 #-include vendor/samsung/m01q/BoardConfigVendor.mk
