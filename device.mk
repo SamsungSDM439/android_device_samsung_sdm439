@@ -151,3 +151,15 @@ PRODUCT_PACKAGES += \
     charger \
     charger_res_images \
     lineage_charger_res_images
+
+# LiveDisplay
+PRODUCT_PACKAGES += \
+    lineage.livedisplay@2.0-service.samsung-qcom
+
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libnl
+	
+# USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
