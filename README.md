@@ -15,3 +15,10 @@ Device tree for the Samsung Galaxy SDM439
 | Camera (Front)          | 5 MP, f/2.0, 26mm (wide), 1/2.8", 0.8µm                                                                                      |
 
 
+Build without vendor so this need android 11 vendor
+
+Bugs
+Call sound
+Face unlock
+Bluetooth Audio
+Usb Debugging (mtp/Ptp working)
