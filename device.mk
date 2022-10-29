@@ -125,3 +125,13 @@ PRODUCT_PACKAGES += \
     lib-imsvtshim \
 	tcmiface \
     ims_ext_common.xml
+
+# SamsungDoze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
+# Offline Charger
+PRODUCT_PACKAGES += \
+    charger \
+    charger_res_images \
+    lineage_charger_res_images
