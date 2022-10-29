@@ -128,6 +128,18 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Security
 VENDOR_SECURITY_PATCH := 2022-04-01
 
+
+# SELinux
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/samsung_slsi/sepolicy/common/private \
+    $(DEVICE_PATH)/sepolicy/private
+
+
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    device/samsung_slsi/sepolicy/common/public
+
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
 
