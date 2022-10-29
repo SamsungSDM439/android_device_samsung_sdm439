@@ -17,6 +17,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
+#Ant
+BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
+
 # Architecture
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv8-a

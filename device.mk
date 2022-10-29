@@ -37,6 +37,12 @@ PRODUCT_PACKAGES += \
 # Skip mount
 PRODUCT_COPY_FILES += $(DEVICE_PATH)/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
 
+# ANT
+PRODUCT_PACKAGES += \
+    AntHalService \
+    com.dsi.ant.antradio_library
+
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
