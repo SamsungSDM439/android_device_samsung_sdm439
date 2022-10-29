@@ -42,6 +42,18 @@ PRODUCT_PACKAGES += \
     AntHalService \
     com.dsi.ant.antradio_library
 
+# Audio
+PRODUCT_PACKAGES += \
+    audio.a2dp.default \
+    audio.bluetooth.default \
+    audio.r_submix.default \
+    android.hardware.audio.service
+
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/audio_effects.xml \
+    $(DEVICE_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PLATFORM_VNDK_VERSION)/etc/audio_policy_configuration.xml \
+    $(DEVICE_PATH)/audio/audio_policy_volumes.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/audio_policy_volumes.xml \
+    $(DEVICE_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default_volume_tables.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
