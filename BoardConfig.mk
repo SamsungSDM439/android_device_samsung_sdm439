@@ -183,5 +183,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_USES_MKE2FS := true
 
+#power
+TARGET_USES_INTERACTION_BOOST := true
+
 # inherit from the proprietary version
 #-include vendor/samsung/m01q/BoardConfigVendor.mk
