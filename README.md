@@ -1,1 +1,1 @@
-# android_device_samsung_sdm439
+# 18-m01q
