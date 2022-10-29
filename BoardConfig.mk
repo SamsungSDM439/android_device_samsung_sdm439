@@ -198,5 +198,9 @@ USE_SENSOR_HAL_VER := 2.0
 # Enable QG user space
 PMIC_QG_SUPPORT := true
 
+# Face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_KEYMASTER_VARIANT := samsung
+
 # inherit from the proprietary version
 #-include vendor/samsung/m01q/BoardConfigVendor.mk
