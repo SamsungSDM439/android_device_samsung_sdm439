@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_m01q.mk
+    $(LOCAL_DIR)/lineage_sdm439.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_m01q-userdebug \
-    lineage_m01q-eng
+    lineage_sdm439-userdebug \
+    lineage_sdm439-eng

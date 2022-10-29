@@ -5,13 +5,13 @@
 #
 
 BOARD_VENDOR := samsung
-DEVICE_PATH := device/samsung/m11q
+DEVICE_PATH := device/samsung/sdm439
 ALLOW_MISSING_DEPENDENCIES=true
 BUILD_BROKEN_DUP_RULES := true
 
 # Platform
 BOARD_VENDOR := samsung
-TARGET_BOARD_PLATFORM := sdm450
+TARGET_BOARD_PLATFORM := sdm439
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno506
 
 # APEX
@@ -40,7 +40,7 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
-TARGET_BOOTLOADER_BOARD_NAME := msm8953
+TARGET_BOOTLOADER_BOARD_NAME := msm8937
 
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
@@ -50,9 +50,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/framework_manifest.xml
 # Kernel
 TARGET_KERNEL_ARCH := arm64
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb/m01.dtb
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb/sdm439.dtb
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image
-TARGET_KERNEL_SOURCE := kernel/samsung/m11
+TARGET_KERNEL_SOURCE := kernel/samsung/sdm439
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 

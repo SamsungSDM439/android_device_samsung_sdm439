@@ -8,16 +8,16 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from r5q device
-$(call inherit-product, device/samsung/m01q/device.mk)
+$(call inherit-product, device/samsung/sdm439/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_m01q
-PRODUCT_DEVICE := m01q
+PRODUCT_NAME := lineage_sdm439
+PRODUCT_DEVICE := sdm439
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SAMSUNG GALAXY M01
+PRODUCT_MODEL := SAMSUNG GALAXY
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
@@ -34,10 +34,10 @@ TARGET_SCREEN_WIDTH := 720
 
 # Use the latest approved GMS identifiers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=m01q \
-    PRODUCT_NAME=m01q \
-    PRIVATE_BUILD_DESC="m01q-user 11 RP1A.200720.012 M015GXXU3BUD9 release-keys"
+    PRODUCT_DEVICE=sdm439 \
+    PRODUCT_NAME=sdm439 \
+    PRIVATE_BUILD_DESC="sdm439-user 11 RP1A.200720.012 M015GXXU3BUD9 release-keys"
 
-BUILD_FINGERPRINT := "samsung/m01qins/m01q:11/RP1A.200720.012/M015GXXU3BUD9:user/release-keys"
+BUILD_FINGERPRINT := "samsung/sdm439/sdm439:11/RP1A.200720.012/M015GXXU3BUD9:user/release-keys"
 
 WITH_GMS := true
