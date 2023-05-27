@@ -9,8 +9,13 @@ DEVICE_PATH := device/samsung/sdm439
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
-PRODUCT_TARGET_VNDK_VERSION := 30
-PRODUCT_SHIPPING_API_LEVEL := 30
+# Installs gsi keys into ramdisk, to boot a GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
+
+# Treble
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
+PRODUCT_SHIPPING_API_LEVEL := 29
+
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
 
@@ -47,7 +52,22 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.bluetooth.default \
     audio.r_submix.default \
-    android.hardware.audio.service
+    android.hardware.audio.service \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio.effect@6.0-impl \
+    audio.primary.msm8937 \
+    audio.r_submix.default \
+    audio.usb.default \
+    liba2dpoffload \
+    libhdmiedid \
+    libhfp \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
+    libtinycompress
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/audio_effects.xml \
@@ -59,6 +79,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth.a2dp@1.0.vendor \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Permissions
